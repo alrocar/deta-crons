@@ -1,2 +1,9 @@
-requests==2.28.1
-fastapi==0.85.0
+requests==2.27.1
+fastapi==0.78.0
+tweepy==3.10.0
+textblob==0.15.3
+numpy==1.19.5
+pillow==9.0.1
+nltk
+git+https://github.com/tinybirdco/tinybird-python-sdk@master
+APScheduler==3.8.1

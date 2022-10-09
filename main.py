@@ -4,14 +4,20 @@ import requests
 import os
 from fastapi import FastAPI
 import json
+from avatar import run
 
 app = App(FastAPI())
 
 @app.get("/")
 def http():
     print("running on HTTP")
+    print("running save_iss")
     save_iss()
-    print("iss pos from HTTP")
+    print("iss pos saved from cron")
+    print("running tw avatar")
+    run_tw_avatar()
+    print("tw header and avatar updated")
+    print("end from HTTP")
 
 
 # define a function to run on a schedule
@@ -19,8 +25,16 @@ def http():
 @app.lib.cron()
 def cron_job(event):
     print("running on a schedule")
+    print("running save_iss")
     save_iss()
     print("iss pos saved from cron")
+    print("running tw avatar")
+    run_tw_avatar()
+    print("tw header and avatar updated")
+
+
+def run_tw_avatar():
+    run()
 
 
 def save_iss():
