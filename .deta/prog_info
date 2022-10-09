@@ -1,0 +1,1 @@
+{"id":"3f114d63-8fe6-4637-b42d-d7ccfb5ade45","space":15516,"runtime":"python3.9","name":"first-micro","path":"srv8v5","project":"a028uvem","account":"144798365827","region":"eu-central-1","deps":["requests==2.28.1","fastapi==0.85.0"],"envs":["TTOKEN"],"public":true,"log_level":"debug","cron":"1 minute"}
